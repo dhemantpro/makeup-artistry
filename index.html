@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju & Honey Makeup Artistry - Portfolio</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ff6f61;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-links a {
+            color: #ff6f61;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer .social-links a {
+            color: white;
+        }
+        /* Go to Top Button Styling */
+        #goToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        #goToTopBtn:hover {
+            background-color: #e65b50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Sanju & Honey Makeup Artistry</h1>
+        <p>Transforming Beauty, One Face at a Time</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Sanju & Honey Makeup Artistry! We are Sanju, a dedicated housewife, and Honey, a passionate student and my sister. Our love for makeup brought us together to follow our dreams. We trained under a certified makeup teacher to hone our skills and now bring our creativity to life through every look we craft. Whether it’s a wedding, a special occasion, or just a day to feel beautiful, we’re here to make you shine!
+        </p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery" class="section">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="1.jpg" alt="Bridal Makeup">
+            <img src="2.jpg" alt="Glam Look">
+            <img src="3.jpg" alt="Natural Makeup">
+            <img src="4.jpg" alt="Special Event">
+            <img src="1.jpg" alt="Bridal Makeup">
+            <img src="2.jpg" alt="Glam Look">
+            <img src="3.jpg" alt="Natural Makeup">
+            <img src="4.jpg" alt="Special Event">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:sanjuandhoney@example.com">sanjuandhoney@example.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Beauty Lane, Makeup City, State, ZIP Code</p>
+        <div class="social-links">
+            <p>Connect with us:</p>
+            <a href="https://instagram.com/sanjuandhoney" target="_blank">Instagram</a>
+            <a href="https://facebook.com/sanjuandhoney" target="_blank">Facebook</a>
+            <a href="https://youtube.com/@sanjuandhoney" target="_blank">YouTube</a>
+        </div>
+    </div>
+
+    <!-- Go to Top Button -->
+    <button id="goToTopBtn" onclick="scrollToTop()">Top</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sanju & Honey Makeup Artistry. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/sanjuandhoney" target="_blank">Instagram</a> |
+            <a href="https://facebook.com/sanjuandhoney" target="_blank">Facebook</a> |
+            <a href="https://youtube.com/@sanjuandhoney" target="_blank">YouTube</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Go to Top Functionality -->
+    <script>
+        // Get the button
+        const goToTopBtn = document.getElementById("goToTopBtn");
+
+        // Show the button when scrolling down 100px from the top
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                goToTopBtn.style.display = "block";
+            } else {
+                goToTopBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top when button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
